@@ -59,9 +59,9 @@ const Main = () => {
                                 price: 'Aguarde',
                             },
                         ].map((item, i) => (
-                            <div key={i} className="flex flex-col gap-4 flex-shrink-0 w-64">
+                            <div key={i} className="group flex flex-col gap-4 flex-shrink-0 w-64 overflow-hidden">
                                 <div
-                                    className={`w-full aspect-[3/4] bg-cover bg-center rounded-lg ${!item.img && 'bg-background-light dark:bg-background-dark border border-primary/20'
+                                    className={`w-full aspect-[3/4] bg-cover transition-transform duration-300 group-hover:scale-105 bg-center rounded-lg ${!item.img && 'bg-background-light dark:bg-background-dark border border-primary/20'
                                         }`}
                                     style={{
                                         backgroundImage: item.img ? `url("${item.img}")` : 'none',
