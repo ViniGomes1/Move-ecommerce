@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#ee2b8c",
+            "background-light": "#f8f6f7",
+            "background-dark": "#221019",
+          },
+          fontFamily: {
+            display: ["Plus Jakarta Sans"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px"
+          },
+        },
+      },
+    };
+  </script>
+  <title>FitWear - Roupas de Treino</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <div class="flex items-center gap-8">
+            <a class="flex items-center gap-2 text-2xl font-bold text-zinc-900 dark:text-white" href="#">
+              <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"
+                  fill-rule="evenodd"></path>
+              </svg>
+              FitWear
+            </a>
+            <nav class="hidden items-center gap-8 lg:flex">
+              <a class="text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-primary" href="#">Novidades</a>
+              <a class="text-sm font-medium text-zinc-900 dark:text-white" href="#">Roupas</a>
+              <a class="text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-primary" href="#">Acessórios</a>
+              <a class="text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-primary" href="#">Sale</a>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="hidden md:flex relative items-center">
+              <span class="material-symbols-outlined absolute left-3 text-zinc-500">search</span>
+              <input
+                class="w-full rounded-full border-zinc-200 dark:border-zinc-700 bg-background-light dark:bg-background-dark py-2 pl-10 pr-4 text-sm focus:border-primary focus:ring-primary"
+                placeholder="Buscar" type="search" />
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-primary/10">
+                <span class="material-symbols-outlined text-zinc-600 dark:text-zinc-300">favorite_border</span>
+              </button>
+              <button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-primary/10">
+                <span class="material-symbols-outlined text-zinc-600 dark:text-zinc-300">shopping_bag</span>
+              </button>
+              <button class="flex h-10 w-10 items-center justify-center rounded-full">
+                <div class="h-10 w-10 rounded-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABgxSyuqxNUoU6fTwCqQQ2QtFatMDVNCZaorl4eLH4KlAbv6fKx6EBPECWdUHUzvBDoNVUWQUcxiPeYeuFbcrs6E69FnoYfAoIpQB3f8p3-J3kG-vW3qNJuL9Fgho5rRhCKdhp33gia7vQJS2htH5muvv3z-bhllNPUNsX7BmTVaPDepzcIusj3NH34anGHTlLc0SMUjNEsUgwugJAYK4QsZwSIFQxoirOGc8WlSB712ZCkD2tKFaTYmJtvER-K0RbkZJb2qgUF2M");'>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <footer class="w-full bg-background-light dark:bg-background-dark border-t border-zinc-200 dark:border-zinc-800">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between">
+          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <a class="text-sm text-zinc-500 dark:text-zinc-400 hover:text-primary" href="#">Sobre nós</a>
+            <a class="text-sm text-zinc-500 dark:text-zinc-400 hover:text-primary" href="#">Contato</a>
+            <a class="text-sm text-zinc-500 dark:text-zinc-400 hover:text-primary" href="#">Política de Privacidade</a>
+            <a class="text-sm text-zinc-500 dark:text-zinc-400 hover:text-primary" href="#">Termos de Serviço</a>
+          </div>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400">© 2024 FitWear. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.from-black\/50 {
+    --tw-gradient-from: rgba(23, 37, 27, 0.578) var(--tw-gradient-from-position) !important;
+}
+
+i {
+    background-color: #314d23;
+}
+
+.active {
+    color: #314d23;
+    font-weight: bold;
+}

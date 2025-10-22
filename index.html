@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
+    <link rel="stylesheet" href="Style/Style.css"></link>
+    
+    <!-- Tailwind -->
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#314d23",
+                        "background-light": "#d1d3c6",
+                        "background-dark": "#4e5e47",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    
+        
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- React-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.3.4/react-router-dom.min.js"></script>
+    <!--Routers-->
+    <script type="text/babel" src="Components-react/router.js"></script>
+    <script type="text/babel" src="Components-react/Header/Header.js"></script>
+    <script type="text/babel" src="Components-react/Pages/MainPage.js"></script>
+    <script type="text/babel" src="Components-react/Main/Main.js"></script>
+    <script type="text/babel" src="Components-react/Footer/Footer.js"></script>
+    <script type="text/babel" src="Components-react/Roupas/Roupas.js"></script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
