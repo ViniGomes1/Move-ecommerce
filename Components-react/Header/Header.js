@@ -1,3 +1,4 @@
+
 const Header = () => {
     return (
         <header
@@ -5,13 +6,7 @@ const Header = () => {
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center gap-6">
-                        <a class="flex items-center gap-2" href="#">
-                            <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                            <h1 class="text-xl font-bold text-gray-900 dark:text-white">FitWear</h1>
-                        </a>
+                        <NavLink to="/"><img className="logo" src='Logo\path1.svg' ></img></NavLink>
                         <nav class="hidden md:flex items-center gap-6">
                             <NavLink to="/News" class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
                                 href="#">Novidades</NavLink>
